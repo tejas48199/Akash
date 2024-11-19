@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* Container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .resume-container {
+            display: flex;
+            max-width: 900px;
+            background-color: #0a2a60;
+            /* Dark blue background */
+            color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Left Column */
+        .left-column {
+            width: 35%;
+            padding: 20px;
+            background-color: #0a2a60;
+        }
+
+        .left-column h2 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .left-column p {
+            margin: 8px 0;
+        }
+
+        .left-column .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .left-column .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-top: 20px;
+        }
+
+        .skills-section h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .skills-section .skill {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-section .skill span {
+            margin-left: 8px;
+        }
+
+        /* Right Column */
+        .right-column {
+            width: 65%;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .right-column h2 {
+            color: #0a2a60;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .work-experience {
+            margin-top: 20px;
+        }
+
+        .work-experience h3 {
+            font-size: 1.3em;
+            color: #0a2a60;
+            margin-bottom: 5px;
+        }
+
+        .work-experience p {
+            font-size: 0.9em;
+            margin: 8px 0;
+        }
+
+        .roles-responsibilities,
+        .skills-used {
+            margin-top: 10px;
+        }
+        
+        .skills-section {
+            width: 350px;
+            background-color: #001b54;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .skills-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .skill-icon {
+            width: 10px;
+            height: 10px;
+            background-color: #4CAF50; /* Green color for the icon */
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        .stars {
+            color: #FFD700; /* Gold color for stars */
+        }
+        
+        /* Print Styling */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .resume-container {
+                box-shadow: none;
+            }
+        }
+        @media print {
+    /* Hide unwanted elements */
+    body {
+        visibility: visible;
+    }
+
+    /* Hide the header with the path, date, and time */
+    .no-print, header, footer {
+        display: none;
+    }
+
+    /* Ensure other necessary elements are formatted for print */
+    .resume-container {
+        /* display: block; */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="no-print">
+        <!-- Header content that you want to exclude -->
+    </header>
+    <div class="resume-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <h1>Shilpa K</h1>
+            <p>8095401454</p><br>
+            <p>shilpagowda8095@gmail.com</p><br>
+            <p>#04, Mahalakshmi Layout, near Urikatheshwari Temple, Mysuru 570008</p><br>
+            <p>Nationality: Indian</p><br>
+            <p>Marital Status: Single</p><br>
+            <p>Religion: Hindu</p>
+    
+            <div class="skills-section">
+                <h2>Skills Summary</h2><br>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-icon"></span>
+                        <span>Communication</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-icon"></span>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-icon"></span>
+                        <span>Conflict Resolution</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-icon"></span>
+                        <span>Customer Focused</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-icon"></span>
+                        <span>Organizational Skills</span>
+                    </div>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            
+            </div>
+        </div>
+    
+        <!-- Right Column -->
+        <div class="right-column">
+            <h2>Objectives</h2>
+            <p>To be a part of an esteemed organization where my potential and effort are utilized to the fullest,
+                enabling my career advancement and making me a productive professional for the organization. Trusted
+                leader in collaborative initiatives that positively impact telecommunications.
+                Key contributor in understanding customer requirements and improving business operations and revenue.
+                Successfully led with a proven history of customer satisfaction. Experienced in Customer Relationship
+                Management with over <b>"2 Years 8 Months"</b>of experience in International Voice, Email, and Chat processes with
+                an excellent reputation for resolving problems and enhancing customer satisfaction.
+            </p>
+            <div class="work-experience">
+                <h3>Work Experience</h3>
+                <p><strong>Medidata – Product Support <br> Programmer</strong></p>
+                <p>Energetic customer service representative with 1+ years of experience in Technical Support. Handling
+                    high-priority cases and CIRT (Critical Incident Response Time) cases. Proficient in handling calls,
+                    Zoom meetings, and providing resolutions to end-users or clients. Worked across roles like L1
+                    Analyst, L1.5 Analyst, Team Management, and CIRT Team Analyst. Hands-on experience with MIM
+                    (Major Incident Management), Life Sciences, and tools like Zendesk and ServiceNow. Trained multiple
+                    new batches and shared knowledge with peers.</p>
+            </div>
+            <div class="roles-responsibilities">
+                <p><strong>Roles & Responsibilities:</strong></p>
+                <p>Worked with the CIRT team, handling critical incidents reported via call, email, and chat. Collaborated
+                    with teams like GNOC, Cloud Ops, TechS Eng, and R&D to resolve cases. Created RCAs using JIRA to 
+                    identify the root cause of issues. Responsible for providing clients with comprehensive issue and 
+                    resolution details.</p>
+            </div>
+            <div class="project-description">
+                <p><strong>Project Description:</strong></p>
+                <p>Medidata’s unified life sciences platform is the only eClinical solution that helps you run trials, better engage 
+                    customers, and leverage the most up-to-date life sciences data. We support Medidata's Unified Life Science products, 
+                    including Medidata Rave, CTMS, Patient Cloud, RTMS, etc., along with Major Incident Management for these platforms.
+                </p>
+            </div>
+            <div class="career-highlights">
+                <p><strong>Career Highlights:</strong></p>
+                <p>Awarded for "Contributing towards excellent performance and extraordinary team efforts."
+                   Recognized as "Best Superpower" for the project and awarded as "Best All-Rounder."
+                </p>
+            </div>
+    
+            <div class="skills-used">
+                <p><strong>Skills Used for Medidata - Product HD Support:</strong></p>
+                <p>ServiceNow, Zendesk, JIRA, Talkdesk, Avaya, 3DS, AWS, Thycotic, Sumo Logic, Knowledge Hub.</p>
+    
+            </div>
+    
+            <div class="additional-skills">
+                <p><strong>Additional Skills:</strong></p>
+                <p>Network Configuration, Tech Support and Troubleshooting, Networking, Data Analysis, Service Desk, End-User Tools, Nexthink, Java, SQL, Manual Testing, Automation Testing (Selenium), Cloud Management.</p>
+    
+            </div>
+    
+            <div class="education-section">
+                <p><strong>Education:</strong></p>
+                
+                <div class="education-item">
+                    <p><strong>SSLC</strong> - JSS Girls High School</p>
+                </div>
+                
+                <div class="education-item">
+                    <p><strong>PUC</strong> - Govt. PU College</p>
+                </div>
+                
+                <div class="education-item">
+                    <p><strong>BSc</strong> - Maharani Science College for Women</p>
+    
+                    <div class="education-item">
+                        <p><strong>MSc</strong> - University of Mysuru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+    <footer class="no-print">
+        <!-- Footer content to exclude -->
+    </footer>
+    
+    </body>
+    
+</html>
